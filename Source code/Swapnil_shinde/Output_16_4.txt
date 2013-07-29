@@ -1,0 +1,112 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Last login: Sat Mar 10 12:49:15 2012 from vpn94.vse.gmu.edu
+MOTD:
+
+  The system Thor.vse.gmu.edu is available for those requiring a 64 bit environment.  
+  To prevent excessive system load on zeus please run long-running and computationally 
+  intensive jobs on Thor.
+
+
+sshinde2@zeus:~$ mpdtrace -l
+-bash: mpdtrace: command not found
+sshinde2@zeus:~$ ssh medusa-node10.vsnet.gmu.edu
+Last login: Sat Mar 10 12:25:26 2012 from zeus.vse.gmu.edu
+-bash-4.1$ mpdboot -n 4
+-bash-4.1$ mpdtrace -l
+mnode10_51438 (192.168.0.10)
+mnode1_33624 (192.168.0.1)
+mnode3_33879 (192.168.0.3)
+mnode2_36344 (192.168.0.2)
+-bash-4.1$ mpicc -o main2Copy main2Copy.c -std=c99 -lm
+-bash-4.1$ mpiexec -n 4 ./main2Copy
+
+
+
+
+
+No of processes - 4 , My rank - 1
+I am slave node 
+No of processes - 4 , My rank - 3
+I am slave node 
+
+
+No of processes - 4 , My rank - 2
+I am slave node 
+
+No of processes - 4 , My rank - 0
+ MASTER NODE No of processes - 4 , My rank - 0
+Current local time and date: Sat Mar 10 13:04:19 2012
+1331402659067160
+2 
+New lngth after padding 18 
+
+ N in each sub matrices 6
+
+row 2 
+col 3 
+Master Sending messages to 1 
+Master Sending messages to 2 
+Master Sending messages to 3 
+SENDING MESSAGE BACK TO MASTER
+
+SENDING MESSAGE BACK TO MASTER
+
+SENDING MESSAGE BACK TO MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+
+ merge_array 
+ 11  12  13  5  6  7  -1  -1  1  16  15  14  10  9  8  4  3  2 
+############### 2D MERGE PROCESS STARTED ##########
+Current local time and date: Sat Mar 10 13:04:19 2012
+ End time 1331402659071024
+######### Total time in micro seconds  3864
+******************************** DISPLAY FINAL SORTED OUTPUT **********************************
+
+
+
+Snake indexed output - rows=3 columns=6
+ -1  -1  1  2  3  4  10  9  8  7  6  5  11  12  13  14  15  16 
+**********************Sorted list****************************
+ 1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16 -bash-4.1$ 

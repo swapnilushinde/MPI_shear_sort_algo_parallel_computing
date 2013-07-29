@@ -1,0 +1,146 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Last login: Sat Mar 10 13:10:29 2012 from vpn94.vse.gmu.edu
+MOTD:
+
+  The system Thor.vse.gmu.edu is available for those requiring a 64 bit environment.  
+  To prevent excessive system load on zeus please run long-running and computationally 
+  intensive jobs on Thor.
+
+
+sshinde2@zeus:~$ ssh medusa-node10.vsnet.gmu.edu
+Last login: Sat Mar 10 13:10:37 2012 from zeus.vse.gmu.edu
+-bash-4.1$ mpdboot -n 9
+-bash-4.1$ mpdtrace -l
+mnode10_50299 (192.168.0.10)
+mnode1_53058 (192.168.0.1)
+mnode3_36540 (192.168.0.3)
+mnode2_47303 (192.168.0.2)
+mnode4_53500 (192.168.0.4)
+mnode5_41817 (192.168.0.5)
+mnode8_49615 (192.168.0.8)
+mnode7_44122 (192.168.0.7)
+mnode6_33726 (192.168.0.6)
+-bash-4.1$ mpicc -o main2Copy main2Copy.c -std=c99 -lm
+-bash-4.1$ mpiexec -n 9 ./main2Copy
+
+
+
+
+
+
+
+
+
+
+No of processes - 9 , My rank - 2
+I am slave node 
+
+No of processes - 9 , My rank - 6
+I am slave node 
+
+No of processes - 9 , My rank - 4
+I am slave node 
+
+No of processes - 9 , My rank - 8
+I am slave node 
+
+No of processes - 9 , My rank - 3
+I am slave node 
+
+No of processes - 9 , My rank - 7
+I am slave node 
+
+No of processes - 9 , My rank - 5
+I am slave node 
+
+No of processes - 9 , My rank - 1
+I am slave node 
+
+SENDING MESSAGE BACK TO MASTER
+
+No of processes - 9 , My rank - 0
+ MASTER NODE No of processes - 9 , My rank - 0
+Current local time and date: Sat Mar 10 13:16:08 2012
+1331403368273359
+8 
+New lngth after padding 16 
+
+ N in each sub matrices 2
+
+row 2 
+col 1 
+Master Sending messages to 1 
+Master Sending messages to 2 
+Master Sending messages to 3 
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 4 
+SENDING MESSAGE BACK TO MASTER
+
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 5 
+Master Sending messages to 6 
+SENDING MESSAGE BACK TO MASTER
+
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 7 
+Master Sending messages to 8 
+SENDING MESSAGE BACK TO MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+
+ merge_array 
+ 15  13  11  9  7  5  3  1  16  14  12  10  8  6  4  2 
+############### 2D MERGE PROCESS STARTED ##########
+Current local time and date: Sat Mar 10 13:16:08 2012
+ End time 1331403368290775
+######### Total time in micro seconds  17416
+******************************** DISPLAY FINAL SORTED OUTPUT **********************************
+
+
+
+Snake indexed output - rows=8 columns=2
+ 1  2  4  3  5  6  8  7  9  10  12  11  13  14  16  15 
+*******************
+SENDING MESSAGE BACK TO MASTER
+***Sorted list****************************
+ 1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16 -bash-4.1$ 

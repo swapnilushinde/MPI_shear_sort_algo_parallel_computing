@@ -1,0 +1,204 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Last login: Sat Mar 10 13:27:48 2012 from vpn94.vse.gmu.edu
+MOTD:
+
+  The system Thor.vse.gmu.edu is available for those requiring a 64 bit environment.  
+  To prevent excessive system load on zeus please run long-running and computationally 
+  intensive jobs on Thor.
+
+
+sshinde2@zeus:~$ ssh medusa-node10.vsnet.gmu.edu
+Last login: Sat Mar 10 13:28:04 2012 from zeus.vse.gmu.edu
+-bash-4.1$ mpdboot -n 4
+-bash-4.1$ mpdtrace -l
+mnode10_58928 (192.168.0.10)
+mnode1_46433 (192.168.0.1)
+mnode3_42568 (192.168.0.3)
+mnode2_52214 (192.168.0.2)
+-bash-4.1$ mpicc -o main2Copy main2Copy.c -std=c99 -lm
+-bash-4.1$ mpiexec -np 16 ./main2Copy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+No of processes - 16 , My rank - 3
+I am slave node 
+
+No of processes - 16 , My rank - 1
+I am slave node 
+
+No of processes - 16 , My rank - 7
+No of processes - 16 , My rank - 9
+No of processes - 16 , My rank - 13
+I am slave node 
+No of processes - 16 , My rank - 11
+I am slave node 
+
+
+I am slave node 
+
+No of processes - 16 , My rank - 15
+I am slave node 
+
+No of processes - 16 , My rank - 5
+I am slave node 
+
+I am slave node 
+
+No of processes - 16 , My rank - 0
+ MASTER NODE No of processes - 16 , My rank - 0
+Current local time and date: Sat Mar 10 13:31:13 2012
+1331404273523583
+11 
+New lngth after padding 75 
+
+ N in each sub matrices 5
+
+row 2 
+col 3 
+Master Sending messages to 1 
+Master Sending messages to 2 
+Master Sending messages to 3 
+No of processes - 16 , My rank - 2
+I am slave node 
+
+SENDING MESSAGE BACK TO MASTER
+
+No of processes - 16 , My rank - 8
+No of processes - 16 , My rank - 12
+No of processes - 16 , My rank - 14
+I am slave node 
+
+No of processes - 16 , My rank - 10
+I am slave node 
+SENDING MESSAGE BACK TO MASTER
+
+
+I am slave node 
+
+No of processes - 16 , My rank - 4
+I am slave node 
+I am slave node 
+
+
+Master Sending messages to 4 
+Master Sending messages to 5 
+SENDING MESSAGE BACK TO MASTER
+
+No of processes - 16 , My rank - 6
+I am slave node 
+
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 6 
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 7 
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 8 
+Master Sending messages to 9 
+SENDING MESSAGE BACK TO MASTER
+
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 10 
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 11 
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 12 
+Master Sending messages to 13 
+SENDING MESSAGE BACK TO MASTER
+
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 14 
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 15 
+SENDING MESSAGE BACK TO MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+SENDING MESSAGE BACK TO MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+
+ merge_array 
+ 6271  11372  17678  5720  6643  15562  795  12994  18760  11874  16400  18147  377  5991  5991  737  5555  20736  18036  18752  22905  1750  13633  17354  2488  2531  18553  4216  12886  13329  -1  -1  -1  -1  -1  1909  -1  -1  -1  -1  -1  -1  -1  -1  -1  29675  25343  20609  26613  25084  21838  25962  24067  20274  30804  27688  18775  28862  19878  18420  32559  32202  22734  29463  28514  26794  31655  28092  21019  31089  30908  18986  31720  29801  28966  -1  -1  -1  27339  19781  5411  -1  -1  -1  -1  -1  -1  -1  -1  -1 
+############### 2D MERGE PROCESS STARTED ##########
+Current local time and date: Sat Mar 10 13:31:13 2012
+ End time 1331404273585558
+######### Total time in micro seconds  61975
+******************************** DISPLAY FINAL SORTED OUTPUT **********************************
+
+
+
+Snake indexed output - rows=15 columns=6
+ -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  377  737  795  1750  5411  5555  4216  2531  2488  1909  5991  5720  5991  6271  6643  11372  15562  13633  13329  12994  12886  11874  16400  17354  17678  18036  18147  18420  19781  18986  18775  18760  18752  18553  19878  20274  20609  21019  21838  20736  25962  25343  25084  22905  22734  24067  26613  26794  27339  27688  28092  28514  29801  30804  29675  29463  28966  28862  31655  30908  31089  31720  32202  32559 
+**********************Sorted list****************************
+ 377  737  795  1750  1909  2488  2531  4216  5555  5411  5991  5720  5991  6271  6643  11372  11874  12886  12994  13329  13633  15562  16400  17354  17678  18036  18147  18420  18553  18752  18760  18775  18986  19781  19878  20274  20609  21019  21838  20736  24067  22734  22905  25084  25343  25962  26613  26794  27339  27688  28092  28514  28862  28966  29463  29675  30804  29801  31655  30908  31089  31720  32202  32559 -bash-4.1$ 

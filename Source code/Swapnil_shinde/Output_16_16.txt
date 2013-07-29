@@ -1,0 +1,204 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Last login: Sat Mar 10 13:15:27 2012 from vpn94.vse.gmu.edu
+MOTD:
+
+  The system Thor.vse.gmu.edu is available for those requiring a 64 bit environment.  
+  To prevent excessive system load on zeus please run long-running and computationally 
+  intensive jobs on Thor.
+
+
+sshinde2@zeus:~$ ssh medusa-node10.vsnet.gmu.edu
+Last login: Sat Mar 10 13:15:35 2012 from zeus.vse.gmu.edu
+-bash-4.1$ mpdboot -n 4
+-bash-4.1$ mpdtrace -l
+mnode10_34919 (192.168.0.10)
+mnode1_34785 (192.168.0.1)
+mnode3_44499 (192.168.0.3)
+mnode2_39134 (192.168.0.2)
+-bash-4.1$ mpicc -o main2Copy main2Copy.c -std=c99 -lm
+-bash-4.1$ mpiexec -np 16 ./main2Copy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+No of processes - 16 , My rank - 1
+I am slave node 
+
+No of processes - 16 , My rank - 3
+I am slave node 
+
+No of processes - 16 , My rank - 7
+I am slave node 
+
+No of processes - 16 , My rank - 9
+No of processes - 16 , My rank - 5
+No of processes - 16 , My rank - 11
+I am slave node 
+
+I am slave node 
+
+I am slave node 
+
+No of processes - 16 , My rank - 15
+I am slave node 
+
+No of processes - 16 , My rank - 13
+I am slave node 
+
+SENDING MESSAGE BACK TO MASTER
+
+No of processes - 16 , My rank - 0
+ MASTER NODE No of processes - 16 , My rank - 0
+Current local time and date: Sat Mar 10 13:20:37 2012
+1331403637049452
+14 
+New lngth after padding 30 
+
+ N in each sub matrices 2
+
+row 2 
+col 1 
+Master Sending messages to 1 
+Master Sending messages to 2 
+Master Sending messages to 3 
+No of processes - 16 , My rank - 2
+No of processes - 16 , My rank - 6
+No of processes - 16 , My rank - 14
+No of processes - 16 , My rank - 8
+I am slave node 
+
+Master Sending messages to 4 
+Master Sending messages to 5 
+No of processes - 16 , My rank - 12
+I am slave node 
+I am slave node 
+
+I am slave node 
+
+
+I am slave node 
+
+SENDING MESSAGE BACK TO MASTER
+
+No of processes - 16 , My rank - 4
+I am slave node 
+
+No of processes - 16 , My rank - 10
+I am slave node 
+
+SENDING MESSAGE BACK TO MASTER
+
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 6 
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 7 
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 8 
+Master Sending messages to 9 
+SENDING MESSAGE BACK TO MASTER
+
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 10 
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 11 
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 12 
+Master Sending messages to 13 
+SENDING MESSAGE BACK TO MASTER
+
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 14 
+SENDING MESSAGE BACK TO MASTER
+
+Master Sending messages to 15 
+SENDING MESSAGE BACK TO MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+SENDING MESSAGE BACK TO MASTER
+
+@MASTER @MASTER @MASTER slave input received @MASTER @MASTER @MASTER
+
+
+ merge_array 
+ 13  15  9  11  7  5  1  3  -1  -1  -1  -1  -1  -1  -1  14  16  10  12  8  6  2  4  -1  -1  -1  -1  -1  -1  -1 
+############### 2D MERGE PROCESS STARTED ##########
+Current local time and date: Sat Mar 10 13:20:37 2012
+ End time 1331403637111141
+######### Total time in micro seconds  61689
+******************************** DISPLAY FINAL SORTED OUTPUT **********************************
+
+
+
+Snake indexed output - rows=15 columns=2
+ -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  -1  2  1  3  4  6  5  7  8  10  9  11  12  14  13  15  16 
+**********************Sorted list****************************
+ 1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16 -bash-4.1$ 
